@@ -4,8 +4,9 @@ import MealItem from "./MealItem";
 
 export default function Meals() {
     const [loadedMeals, setLoadedMeals] = useState([]);
+    console.log(loadedMeals)
 
-    
+     
     useEffect(() => {
         async function fetchMeals() {
             const response = await fetch('http://localhost:3000/meals');
