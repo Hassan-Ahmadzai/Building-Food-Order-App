@@ -25,7 +25,9 @@ export default function Header() {
             </div>
 
             <nav>
-                <Button>Cart ({totalCartItems})</Button>
+                <Button onClick={handleShowCart}>
+                    Cart ({totalCartItems})
+                </Button>
             </nav>
         </header>
     );

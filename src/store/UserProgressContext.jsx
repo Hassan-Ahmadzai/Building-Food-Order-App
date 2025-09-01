@@ -36,9 +36,12 @@ export function UserProgressContextProvider({ children }) {
         hideCheckout,
     };
 
-    <UserProgressContext.Provider value={userProgress}>
-        {children}
-    </UserProgressContext.Provider>
+
+    return (
+        <UserProgressContext.Provider value={userProgressCtx}>
+            {children}
+        </UserProgressContext.Provider>
+    );
 };
 
 export default UserProgressContext;
