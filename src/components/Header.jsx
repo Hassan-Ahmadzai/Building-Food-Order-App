@@ -19,6 +19,19 @@ export default function Header() {
         userProgressCtx.showCart();
     };
 
+    const cartCx = useContext(CartContext);
+    const userProgressCt = useContext(UserProgressContext);
+
+    const totalCartItem = cartCtx.items.reduce((totalNumberOfItems, item) => {
+        return totalNumberOfItems + item.quantity;
+    }, 0);
+
+    
+
+    function handleShowCart() {
+        userProgressCtx.showCart();
+    };
+
     return (
         <header id="main-header">
             <div id="title">
