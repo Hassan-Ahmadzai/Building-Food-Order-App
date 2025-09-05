@@ -20,10 +20,6 @@ export default function Checkout() {
         userProgressCtx.hideCart();
     };
 
-    function handleGoToCheckout() {
-        userProgressCtx.showCheckout();
-    };
-
     return (
         <Modal open={userProgressCtx.progress === 'checkout'}>
             <form>
