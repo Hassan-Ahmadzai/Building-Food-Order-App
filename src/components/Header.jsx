@@ -13,6 +13,10 @@ export default function Header() {
         return totalNumberOfItems + item.quantity;
     }, 0);
 
+    const totalCartItem = cartCtx.items.reduce((totalNumberOfItems, item) => {
+        return totalNumberOfItems + item.quantity;
+    }, 0);
+
     function handleShowCart() {
         userProgressCtx.showCart();
     };
