@@ -13,21 +13,6 @@ export default function Header() {
         return totalNumberOfItems + item.quantity;
     }, 0);
 
-    
-
-    function handleShowCart() {
-        userProgressCtx.showCart();
-    };
-
-    const cartCx = useContext(CartContext);
-    const userProgressCt = useContext(UserProgressContext);
-
-    const totalCartItem = cartCtx.items.reduce((totalNumberOfItems, item) => {
-        return totalNumberOfItems + item.quantity;
-    }, 0);
-
-    
-
     function handleShowCart() {
         userProgressCtx.showCart();
     };
