@@ -25,6 +25,8 @@ function cartReducer(state, action) {
         } else {
             updatedItems.push({ ...action.item, quantity: 1 });
         };
+
+        return { ...state, items: updatedItems };
     };
 
     if (action.type === 'REMOVE_ITEM') {
